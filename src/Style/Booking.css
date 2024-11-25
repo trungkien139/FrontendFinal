@@ -1,0 +1,29 @@
+/* CSS chung cho các nút icon */
+.icon-action {
+  font-size: 24px !important; /* Tăng kích thước icon */
+  padding: 5px !important;
+  margin-right: 8px !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Icon "Xem chi tiết" (view-icon) */
+.view-icon {
+  color: #1890ff !important; /* Màu xanh */
+  font-size: 24px;
+}
+
+.view-icon:hover {
+  background-color: #e6f7ff !important; /* Màu nền khi hover */
+  color: #40a9ff !important; /* Màu xanh sáng hơn */
+}
+
+/* Icon "Xóa" (delete-icon) */
+.delete-icon {
+  color: #ff4d4f !important; /* Màu đỏ */
+}
+
+.delete-icon:hover {
+  background-color: #fff1f0 !important; /* Màu nền khi hover */
+  color: #ff7875 !important; /* Màu đỏ sáng hơn */
+}

@@ -1,0 +1,67 @@
+/* Định dạng chung cho Modal */
+.service-add-modal {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Tiêu đề Modal */
+.service-add-modal .ant-modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Căn chỉnh phần nội dung */
+.service-add-modal .ant-modal-body {
+  padding: 20px;
+}
+
+/* Form layout */
+.service-add-modal .ant-form-item {
+  margin-bottom: 16px; /* Khoảng cách giữa các item */
+}
+
+.service-add-modal .ant-form-item-label > label {
+  font-size: 14px; /* Kích thước chữ của label */
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px; /* Khoảng cách giữa label và input */
+}
+
+/* Input styling */
+.service-add-modal .ant-input {
+  height: 40px; /* Chiều cao của input */
+  border-radius: 5px; /* Bo góc input */
+  border: 1px solid #d9d9d9;
+  transition: border-color 0.3s;
+}
+
+.service-add-modal .ant-input:focus {
+  border-color: #1890ff; /* Màu border khi focus */
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2); /* Hiệu ứng shadow khi focus */
+}
+
+/* Footer Modal */
+.service-add-modal-footer {
+  display: flex;
+  justify-content: flex-end; /* Căn nút về bên phải */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+/* Nút Hủy */
+.service-add-modal-footer .ant-btn {
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.service-add-modal-footer .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  transition: background-color 0.3s;
+}
+
+.service-add-modal-footer .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}

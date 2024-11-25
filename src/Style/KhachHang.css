@@ -1,0 +1,178 @@
+/* Tổng quan cho container chính */
+.khachhang-page-container {
+  font-family: Arial, sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.khachhang-page-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Thanh tìm kiếm và thêm khách hàng */
+.khachhang-search-add-bar input {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  font-style: italic;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+.khachhang-search-add-bar input:focus {
+  border-color: #0365ce; /* Đổi màu khi focus */
+  outline: none;
+}
+
+.khachhang-search-add-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.khachhang-search-add-bar button {
+  background: none; /* Không có màu nền */
+  border: none; /* Loại bỏ viền */
+  cursor: pointer; /* Hiển thị con trỏ khi hover */
+  padding: 5px; /* Khoảng cách bên trong nút */
+  font-size: 24px; /* Kích thước icon */
+  color: #333; /* Màu sắc mặc định */
+  transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng hover */
+}
+
+.khachhang-search-add-bar button:hover {
+  transform: scale(1.2); /* Phóng to khi hover */
+}
+
+/* Bảng danh sách khách hàng */
+.khachhang-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #323131;
+}
+
+.khachhang-table thead tr {
+  background-color: #4cb850;
+  color: white;
+}
+
+.khachhang-table th {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  color: rgb(46, 46, 46);
+}
+
+.khachhang-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.khachhang-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.khachhang-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.khachhang-table button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button {
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+button.khachhang-update {
+  background-color: #83a603; /* Màu xanh chỉnh sửa */
+  color: white;
+}
+
+button.khachhang-update:hover {
+  background-color: #617b02; /* Đậm hơn khi hover */
+}
+
+button.khachhang-delete {
+  background-color: #fbbd03; /* Màu đỏ xóa */
+  color: white;
+}
+
+button.khachhang-delete:hover {
+  background-color: #9b7502; /* Đậm hơn khi hover */
+}
+
+/* Modal thêm/sửa khách hàng */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Content {
+  text-align: center;
+  position: relative;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.KhachHangModal__Content h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+.KhachHangModal__Content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.KhachHangModal__Content button {
+  display: flex;
+  width: calc(50% - px);
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: -15px;
+}
+
+.khachhang-close-button {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

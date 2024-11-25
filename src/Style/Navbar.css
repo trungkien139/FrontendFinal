@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #023468; /* Màu nền tối */
+  color: white; /* Màu chữ */
+  width: 200px; /* Tăng chiều rộng để thoải mái hơn */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  position: fixed; /* Cố định vị trí */
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+}
+
+.navbar a {
+  color: #dee2e6; /* Màu chữ nhạt hơn */
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  display: flex; /* Hiển thị biểu tượng và chữ trên cùng một dòng */
+  align-items: center;
+  border-bottom: 1px solid #495057; /* Đường kẻ phân cách */
+  transition: all 0.3s ease; /* Hiệu ứng hover */
+}
+
+.navbar a:hover {
+  background-color: #5a6b7c; /* Màu nền khi hover */
+  color: white; /* Màu chữ khi hover */
+  transform: translateX(0px); /* Dịch chuyển nhẹ sang phải */
+}
+
+.navbar a span {
+  margin-left: 20px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.navbar .logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.navbar .footer {
+  margin-top: auto; /* Đẩy phần footer xuống dưới cùng */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #adb5bd;
+  border-top: 1px solid #495057; /* Đường kẻ phía trên footer */
+}

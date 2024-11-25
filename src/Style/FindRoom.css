@@ -1,0 +1,42 @@
+.timkiemphong {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.timkiemphong input {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.timkiemphong input:hover {
+  border-color: #005b9a;
+}
+.timkiemphong input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+.timkiemphong input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+.add-room-button {
+  padding: 10px 15px;
+  background-color: #006699;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font: bold;
+  margin-left: 20px;
+}
+
+.add-room-button:hover {
+  background-color: #0056b3;
+}

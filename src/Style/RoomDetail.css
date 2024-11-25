@@ -1,0 +1,112 @@
+.room-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Tăng độ tối của nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeInOverlay 0.3s ease-in-out;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.room-detail-container {
+  background: #ffe6b8;
+  padding: 40px;
+  width: 450px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  animation: slideIn 0.4s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.room-detail-container h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #242424;
+  letter-spacing: 1px;
+}
+
+.room-detail-container p {
+  margin: 20px 10px;
+  font-size: 20px;
+  color: #242424;
+  line-height: 1.5;
+}
+
+.roombutton-container {
+  display: flex;
+  justify-content: right;
+
+  margin-top: 20px;
+}
+
+.roomedit-button,
+.roomdelete-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.roomedit-button {
+  background-color: #83a603;
+  box-shadow: 0 4px 10px #83a603;
+}
+
+.roomedit-button:hover {
+  background-color: #617b02;
+}
+.roomdelete-button {
+  background-color: #fbbd03;
+  box-shadow: 0 4px 10px #9b7502;
+}
+
+.roomdelete-button:hover {
+  background-color: #9b7502;
+  box-shadow: 0 6px 14px rgba(167, 29, 42, 0.5);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  color: #333;
+  transform: scale(1.2);
+}

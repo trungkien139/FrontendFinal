@@ -1,0 +1,127 @@
+/* Container chính */
+.dichvu-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* Tiêu đề */
+.dichvu-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Thanh tìm kiếm và nút thêm */
+.search-add-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 400px;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Bảng dịch vụ */
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: center;
+  padding: 10px;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: #f1f9ff;
+}
+
+.ant-btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.ant-btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+/* Nút hành động */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action-buttons .ant-btn {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+/* Modal */
+.ant-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.ant-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-buttons .ant-btn {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 6px 16px;
+}
+
+.ant-btn-primary {
+  background-color: #008dd9;
+}
+
+.ant-btn-default {
+  border-color: #ddd;
+}
+
+.ant-btn-default:hover {
+  border-color: #bbb;
+}
